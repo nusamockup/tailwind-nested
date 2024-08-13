@@ -24,11 +24,11 @@
     }
 
     .header-scrolled {
-        @apply bg-white/70 dark:bg-dark-100/70 backdrop-blur-md shadow-md;
+        @apply bg-gradient-to-r from-blue-500/80 to-purple-600/80 backdrop-blur-md shadow-md;
     }
 
     .nav-link {
-        @apply px-3 py-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-dark-200 transition-colors duration-200;
+        @apply px-3 py-2 rounded-md text-white hover:bg-white/20 transition-colors duration-200;
     }
 
     .footer {
