@@ -1,0 +1,57 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    .content-container {
+        @apply pt-20 pb-8; // Tambahkan padding bottom
+    }
+
+    .btn {
+        @apply px-4 py-2 rounded-md transition-colors duration-200;
+    }
+
+    .btn-primary {
+        @apply bg-blue-500 text-white hover:bg-blue-600;
+    }
+
+    .card {
+        @apply bg-white border border-gray-100 dark:bg-dark-100 dark:border-dark-200 rounded-lg shadow-md p-6;
+    }
+
+    .header {
+        @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
+    }
+
+    .header-scrolled {
+        @apply bg-white/70 dark:bg-dark-100/70 backdrop-blur-md shadow-md;
+    }
+
+    .nav-link {
+        @apply px-3 py-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-dark-200 transition-colors duration-200;
+    }
+
+    .footer {
+        @apply mt-auto; // Ini akan mendorong footer ke bawah
+    }
+}
+
+.page-transition {
+    @apply transition-opacity duration-300;
+}
+
+.page-enter {
+    @apply opacity-0;
+}
+
+.page-enter-active {
+    @apply opacity-100;
+}
+
+.page-exit {
+    @apply opacity-100;
+}
+
+.page-exit-active {
+    @apply opacity-0;
+}

@@ -1,0 +1,24 @@
+<header class="header bg-transparent dark:bg-dark-100 shadow-md transition-all duration-300">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="/" class="text-2xl font-bold text-blue-600 dark:text-blue-400">Logo</a>
+        <div class="hidden md:flex space-x-4">
+            <a href="/" class="nav-link">Beranda</a>
+            <a href="/about" class="nav-link">Tentang</a>
+            <a href="/services" class="nav-link">Layanan</a>
+            <button id="darkModeToggle" class="nav-link">
+                <span class="dark:hidden">🌙</span>
+                <span class="hidden dark:inline">☀️</span>
+            </button>
+        </div>
+        <button id="mobileMenuToggle" class="md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </nav>
+    <div id="mobileMenu" class="hidden md:hidden">
+        <a href="/" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-dark-200">Beranda</a>
+        <a href="/about" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-dark-200">Tentang</a>
+        <a href="/services" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-dark-200">Layanan</a>
+    </div>
+</header>
